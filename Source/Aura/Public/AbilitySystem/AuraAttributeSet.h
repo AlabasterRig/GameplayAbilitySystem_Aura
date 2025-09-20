@@ -21,6 +21,7 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Health, Category = "Vital Attribute")
 	FGameplayAttributeData Health;
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UAuraAttributeSet, Health);
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_MaxHealth, Category = "Vital Attribute")
 	FGameplayAttributeData MaxHealth;
